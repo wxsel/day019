@@ -1,0 +1,61 @@
+# 面向过程
+# 分析出解决问题的步骤，然后逐步实现
+# 面向对象：
+# 找出解决问题的人，然后分配职责
+# 类
+# 类别　抽象
+# 水果
+# 类中的成员
+# 数据（名词）成员　颜色　重量　味道
+# 　行为（动词）成员　生长　腐烂
+
+# 方法
+# 对象　个体　具体　　实际存在的例子　实例
+# 香蕉　苹果　哈密瓜
+# 类和类区别：行为不同
+# 类与类之间行为不同　对象与对象之间数据不同　
+#
+# 类：抽象的感念　生活中的＇类别＇
+# 对象合实力
+# 类中包含数据成员和方法成员
+# 方法：指定是类中对象的行为
+# 定义一个wife类
+# 类名首字母大写
+class Wife:
+    # 数据成员
+    # 身高　体重　姓名　
+    def __init__(self,weight,name,height):
+        self.weight=90
+        self.name='翠华'
+        self.height=2.2
+    def sing(self):#行为用函数来表示
+        print('%s'% self.name)
+    def play(self,game):
+        print('%s %s'% self.name,game)
+    # 行为成员
+    # 能吃能唱歌　玩　
+    pass
+# 自动调用　_init_方法
+
+w01=Wife(90,'翠华',2.2)
+print(w01.name)
+w01.name='催催'
+print(w01.name)
+w01.sing()
+w01.play()
+print(w01.weight)
+print(w01.height)
+# w02=Wife()
+# print(w02.height)
+# print(w02.weight)
+# print(w02.name)
+# 创建对象
+# w01=Wife()
+# print(w01)
+# # w01的身高为２．２
+# w01.height=2.2
+# print(w01.height)
+# w01.weight=90
+# print(w01.weight)
+# w01.name='翠花'
+# print(w01.name)

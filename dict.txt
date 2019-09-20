@@ -1,0 +1,22 @@
+# 定义敌人类
+# 数据　姓名　血量　法力　基础攻击　防御力
+# 行为　打印数据信息
+# 
+# 创建敌人列表（至少４个元素）画出内存图
+# 查找叫灭霸的敌人　打印信息
+# 查找所有死亡的敌人
+# 计算所有敌人的平均攻击力
+# 删除防御力小于１０的敌人
+# 将所有敌人攻击力增加５０
+# 玩飞机大战　抽象　数据　行为
+# 定义Ｈero类
+class Hero:
+    def __init__(self,data,name):
+        self.data=data
+        self.name=name
+    def print_data(self):
+        print(self.data,self.name)
+ list01=[hero01,hero02,hero03,hero04]
+for i in list01:
+    if i<10:
+        list01.remove(i)
